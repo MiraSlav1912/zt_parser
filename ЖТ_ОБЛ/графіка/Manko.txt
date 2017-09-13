@@ -1,0 +1,45 @@
+self.stack = []
+
+        for name_, _ in self.list_er.items():
+            self.stack.append(ttk.Frame(self.panel, relief='raised',
+                                        padding=2))  # must be flat, groove, raised, ridge, solid, or sunken
+            ttk.Checkbutton(self.stack[-1], text=_[1].get_name(), width=63, style=_[1].get_country() + '.TCheckbutton',
+                            variable=_[0], offvalue=False, onvalue=True).pack(side='left')
+
+            ttk.Label(self.stack[-1], text='к-ть на {} ->'.format(datetime.today().strftime('%Y-%m-%d')),
+                      relief='ridge', width=22).pack(side='left', padx=2)
+            ttk.Label(self.stack[-1], textvariable=_[2],
+                      relief='ridge', width=6).pack(side='left', padx=2)
+            ttk.Label(self.stack[-1], textvariable=_[3],
+                      relief='ridge', width=15).pack(side='left', padx=2)
+            ttk.Label(self.stack[-1], text='Історія',
+                      relief='ridge', width=7).pack(side='left', padx=2)
+            self.panel.window_create('end', window=self.stack[-1])
+            self.panel.insert('end', '\n')
+            self.stack[-1].children['!label4'].bind('<Button-1>', lambda event, x=name_: self.history4esource(x))
+			
+self.d[0].grid(row=1, column=0)
+        for m in range(12):
+            bg = self.color_season(m)
+            box1.rowconfigure(m+2, weight=1)
+            for dt in range(6):
+                for n in range(7):
+                    j = m * 37 + dt * 7 + n + 1
+                    # must be -family, -size, -weight, -slant, -underline, or -overstrike
+                    self.d.append(Canvas(box1, background=bg))  # , relief='groove'
+                    self.d[j].grid(row=m + 2, column=dt * 7 + n + 1, sticky="nsew")
+                    self.d[j].create_text(2, 2, text='', anchor='nw', tags='txt',
+                                          font=font.Font(name='Calibri', size=1, weight='normal', slant='italic'))
+                    self.d[j].create_text(2, 2, text='{0}'.format(m), anchor='e', tags='month',
+                                          font=font.Font(name='Calibri', size=1, weight='normal', slant='italic'))
+                    self.d[j].bind('<Button-1>', self.set_date)
+                    self.d[j].bind('<Button-3>', self.set_interval)
+                    self.d[j].bind('<Double-Button-1>',
+                                   None if outer_cmd is None else
+                                   lambda x=self: outer_cmd([self.cur_t,]
+                                                            if not self.cur_interval else self.cur_interval,
+                                                            self.wrk_name.get()))
+                    if dt * 7 + n + 1 == 37: break
+                if dt * 7 + n + 1 == 37: break
+            ttk.Label(box1, font=font.Font(name='Calibri', size=9, weight='bold', slant='italic'), relief='groove',
+                      text=str(self.mn_ua[m]), foreground='blue', background=bg).grid(row=m + 2, column=0, sticky='nsew')
