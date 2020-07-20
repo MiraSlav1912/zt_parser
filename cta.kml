@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<!-- Data derived from:
+       Ed Knittel - || tastypopsicle.com
+       Feel free to use this file for your own purposes.
+       Just leave the comments and credits when doing so.
+-->
+  <Document>
+    <name>Chicago Transit Map</name>
+    <description>Chicago Transit Authority train lines</description>
+
+    <Style id="blueLine">
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="redLine">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="greenLine">
+      <LineStyle>
+        <color>ff009900</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="orangeLine">
+      <LineStyle>
+        <color>ff00ccff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="pinkLine">
+      <LineStyle>
+        <color>ffff33ff</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="brownLine">
+      <LineStyle>
+        <color>ff66a1cc</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="purpleLine">
+      <LineStyle>
+        <color>ffcc00cc</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Style id="yellowLine">
+      <LineStyle>
+        <color>ff61f2f2</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+
+    <Placemark>
+      <name>Blue Line</name>
+      <styleUrl>#blueLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.89289951324463,41.97881025520548,0
+-87.89184808731079,41.97788506340239,0
+-87.89150476455688,41.97762983571196,0
+-87.8912901878357,41.97750222148314,0
+-87.89090394973755,41.977326751500996,0
+-87.89047479629517,41.97719913666485,0
+-87.88987398147583,41.97707152157296,0
+-87.88912296295166,41.97702366584759,0
+-87.88856506347656,41.97708747347342,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Red Line</name>
+      <styleUrl>#redLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.67283499240875,42.019110918045044,0
+-87.66907453536987,42.01585473134908,0
+-87.66744375228882,42.014483688722116,0
+-87.66716480255127,42.014228607763144,0
+-87.66695022583008,42.01400541108485,0
+-87.66682147979736,42.01379815632509,0
+-87.66662836074829,42.01357495813621,0
+-87.66645669937134,42.0133198735327,0
+-87.66634941101074,42.013080730787806,0
+-87.66611337661743,42.01263432859157,0
+
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Green Line</name>
+      <styleUrl>#greenLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.8049498796463,41.8868887424469,0
+-87.79437124729156,41.88703894615173,0
+-87.78372824192047,41.88716769218445,0
+-87.77429759502411,41.88731789588928,0
+-87.76573598384857,41.88741445541382,0
+-87.75802195072174,41.887521743774414,0
+-87.75767862796783,41.887532472610474,0
+-87.75741040706635,41.887500286102295,0
+-87.7571851015091,41.887478828430176,0
+-87.75661647319794,41.88741445541382,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Orange Line</name>
+      <styleUrl>#orangeLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.73805022239685,41.78673505783081,0
+-87.73810386657715,41.79256081581116,0
+-87.73795366287231,41.79323673248291,0
+-87.73774981498718,41.79365515708923,0
+-87.73746013641357,41.7940628528595,0
+-87.73711681365967,41.79441690444946,0
+-87.73592591285706,41.79522156715393,0
+-87.72440314292908,41.79991006851196,0
+-87.71584153175354,41.80354714393616,0
+-87.71512269973755,41.80378317832947,0
+
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Pink Line</name>
+      <styleUrl>#pinkLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.6339054107666,41.88586950302124,0
+-87.633890,41.883259,0
+-87.633885,41.879289,0
+-87.63370156288147,41.87709331512451,0
+-87.63366937637329,41.876996755599976,0
+-87.63359427452087,41.87693238258362,0
+-87.63347625732422,41.87690019607544,0
+-87.63328313827515,41.87687873840332,0
+-87.631477,41.876985,0
+-87.628514,41.877028,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Brown Line</name>
+      <styleUrl>#brownLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.71307349205017,41.96800221934201,0
+-87.71303057670593,41.96639082739174,0
+-87.71301984786987,41.96627914525123,0
+-87.7129876613617,41.966175440231154,0
+-87.7129340171814,41.966087689697694,0
+-87.71283745765686,41.9660079163806,0
+-87.71275162696838,41.96597600702577,0
+-87.71260142326355,41.965928142963584,0
+-87.7123761177063,41.96594409765499,0
+-87.71220445632935,41.965952074999166,0
+
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Purple Line</name>
+      <styleUrl>#purpleLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.69055902957916,42.072787284851074,0
+-87.68584907054901,42.06420421600342,0
+-87.68419682979584,42.06132888793945,0
+-87.68400371074677,42.06098556518555,0
+-87.68387496471405,42.060706615448,0
+-87.68377840518951,42.06039547920227,0
+-87.6837033033371,42.06010580062866,0
+-87.68360674381256,42.059783935546875,0
+-87.68356382846832,42.05949425697327,0
+-87.68349945545197,42.05911874771118,0
+
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Yellow Line</name>
+      <styleUrl>#yellowLine</styleUrl>
+      <LineString>
+        <altitudeMode>relative</altitudeMode>
+        <coordinates>
+-87.75250,42.04049,0
+-87.74726629257202,42.02620267868042,0
+-87.74621486663818,42.0246148109436,0
+-87.7447772026062,42.02352046966553,0
+-87.74299621582031,42.02279090881348,0
+-87.74123668670654,42.02244758605957,0
+-87.73864030838013,42.02244758605957,0
+-87.7224612236023,42.02253341674805,0
+-87.71857738494873,42.02274799346924,0
+-87.70164728164673,42.02274799346924,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+  </Document>
+</kml>
